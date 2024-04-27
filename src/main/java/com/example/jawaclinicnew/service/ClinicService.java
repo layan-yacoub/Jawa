@@ -1,4 +1,4 @@
-package com.example.jawaclinicnew.Service;
+package com.example.jawaclinicnew.service;
 import com.example.jawaclinicnew.repository.ClinicJpaRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

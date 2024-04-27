@@ -1,6 +1,6 @@
 package com.example.jawaclinicnew.Controller;
 
-import com.example.jawaclinicnew.Service.ClinicService;
+import com.example.jawaclinicnew.service.ClinicService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

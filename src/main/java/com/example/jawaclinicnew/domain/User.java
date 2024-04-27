@@ -1,4 +1,5 @@
 package com.example.jawaclinicnew.domain;
+import com.example.jawaclinicnew.token.Token;
 import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 import lombok.*;
@@ -17,12 +18,12 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "users")
-public class User /*implements UserDetails*/ {
+public class User implements UserDetails {
 
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
         @Column(name="user_id")
-        private Long userId;
+        private Long userID;
         @Column(name = "national_id")
         private Integer nationalId;
         @Column(name = "username" , nullable = false, unique = true)
@@ -57,8 +58,6 @@ public class User /*implements UserDetails*/ {
         private List<Bill> bill = new ArrayList<>();
 
 
-
-        /*
 
         @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
         private List<Token> tokens = new ArrayList<>();
@@ -100,7 +99,6 @@ public class User /*implements UserDetails*/ {
             return true;
         }  }
 
-*/
 
 
-}
+
